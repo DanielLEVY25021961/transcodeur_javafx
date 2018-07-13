@@ -1,0 +1,8 @@
+﻿Variables Local Paths Enterprise Architect sur PC Domicile
+
+JAVA_HOME = C:\Program Files\Java\jdk1.8.0_172
+PATH_PROJET_transcodeur_javafx = D:\Donnees\eclipse\eclipseworkspace_oxygen\transcodeur_javafx
+ECLIPSE_PLUGINS = C:\Users\dan\.p2\pool\plugins
+MAVEN_REPOSITORY = C:\Users\dan\.m2\repository
+
+Penser à changer java.exe en javaw.exe dans le paramétrage de la JVM pour le RUN si l'application est fenêtrée.

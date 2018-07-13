@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="repertoire.entree">./src/test/resources/fichiers/Trafic_Histonat/Trafic_2016/0_Fichiers_originaux</entry>
+<entry key="encodage.entree.suppose">windows-1252</entry>
+<entry key="encodage.sortie">windows-1252</entry>
+</properties>

@@ -1,0 +1,10 @@
+﻿Clé;Libellé;
+0;Sans objet.;
+1;2 Voies < 5m.;
+2;2 Voies entre 5 et 7 m.;
+3;2 Voies >= 7m.;
+4;3 Voies < 10,5m.;
+5;3 Voies >= 10,5m.;
+6;4 Voies < 14m.;
+7;4 Voies >= 14m.;
+8;5 Voies et plus.;

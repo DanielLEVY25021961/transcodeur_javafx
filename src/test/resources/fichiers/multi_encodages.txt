@@ -1,0 +1,8 @@
+Capharnaüm ! Ôh je b?ële mon chârme d'été payé par esp?ce 15 ? sur le marché de Noël de Fa?-l?s-Nemours par Oedipe dans le CHARSET ISO-8859-2
+Capharnaüm ! Ôh je bêële mon chârme d'été payé par espèce 15 ? sur le marché de Noël de Faÿ-lès-Nemours par Oedipe dans le CHARSET ISO-8859-1
+CapharnaÃ¼m ! Ã”h je bÃªÃ«le mon chÃ¢rme d'Ã©tÃ© payÃ© par espÃ¨ce 15 â‚¬ sur le marchÃ© de NoÃ«l de FaÃ¿-lÃ¨s-Nemours par Oedipe dans le CHARSET UTF-8
+Capharnam ! âh je bˆ‰le mon chƒrme d'‚t‚ pay‚ par espŠce 15 ? sur le march‚ de No‰l de Fa˜-lŠs-Nemours par Oedipe dans le CHARSET IBM850
+Capharnaüm ! Ôh je bêële mon chârme d'été payé par espèce 15 € sur le marché de Noël de Faÿ-lès-Nemours par Oedipe dans le CHARSET windows-1252
+Capharnaüm ! Ôh je bêële mon chârme d'été payé par espèce 15 ? sur le marché de Noël de Faÿ-lès-Nemours par Oedipe dans le CHARSET ISO-8859-9
+Capharnaüm ! Ôh je bêële mon chârme d'été payé par espèce 15 ¤ sur le marché de Noël de Faÿ-lès-Nemours par Oedipe dans le CHARSET ISO-8859-15
+Capharna?m ! ?h je b??le mon ch?rme d'?t? pay? par esp?ce 15 ? sur le march? de No?l de Fa?-l?s-Nemours par Oedipe dans le CHARSET US-ASCII
