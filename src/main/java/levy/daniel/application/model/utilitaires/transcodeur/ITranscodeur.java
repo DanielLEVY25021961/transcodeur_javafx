@@ -166,7 +166,7 @@ public interface ITranscodeur {
 	 * pCharsetSupposeEntree.</li>
 	 * <li>Transcode ce fichier pFileEntierementEncodeEntree 
 	 * en pCharsetSortie.</li>
-	 * <li>transcode en CHARSET_UTF8 si pCharsetSortie == null.</li>
+	 * <li>Transcode en CHARSET_UTF8 si pCharsetSortie == null.</li>
 	 * </ul>
 	 * - retourne null si le fichier en entrée pFileATranscoder 
 	 * ne convient pas (null, inexistant, répertoire, vide).<br/>

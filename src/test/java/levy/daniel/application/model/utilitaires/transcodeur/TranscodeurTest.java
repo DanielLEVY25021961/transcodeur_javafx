@@ -242,7 +242,7 @@ public class TranscodeurTest {
 						
 		// **********************************
 		// AFFICHAGE DANS LE TEST ou NON
-		final boolean affichage = true;
+		final boolean affichage = false;
 		// **********************************
 
 		// ******************************************************
@@ -306,6 +306,85 @@ public class TranscodeurTest {
 		
 	} // Fin de testTranscoder().__________________________________________
 
+
+	
+	/**
+	 * .<br/>
+	 * <ul>
+	 * <li></li>
+	 * </ul>
+	 *
+	 * @throws Exception.<br/>
+	 */
+	@SuppressWarnings(UNUSED)
+	@Test
+	public void testTranscoderHITDIRA2017() throws Exception {
+						
+		// **********************************
+		// AFFICHAGE DANS LE TEST ou NON
+		final boolean affichage = true;
+		// **********************************
+
+		// ******************************************************
+		final File fichier = new File("src/test/resources/fichiers/Trafic_Histonat/Trafic_2017/0_Fichiers_originaux/HITDIRO2017.txt");
+		final Charset charsetDecodage = CHARSET_ANSI;
+		final File fichierANSI = this.fournisseurFichiers.fournirFileAnsi(fichier);
+		final File fichierUtf8 = this.fournisseurFichiers.fournirFileUtf8(fichier);
+		// ******************************************************
+		
+		/* AFFICHAGE A LA CONSOLE. */
+		if (AFFICHAGE_GENERAL && affichage) {
+			System.out.println("********** CLASSE TranscodeurTest - méthode testTranscoder() ********** ");
+		}
+		
+		/* AFFICHAGE A LA CONSOLE. */
+		if (AFFICHAGE_GENERAL && affichage) {
+			System.out.println("fichier = " + fichier.getAbsolutePath());
+			System.out.println();
+		}
+		
+		assertTrue("le fichier doit exister : "
+				, fichier.exists());
+
+		
+		// **********************************************************
+		// TRANSCODAGE.		
+		final File fileResultat = this.transcodeur.transcoder(
+				fichier, charsetDecodage, fichierANSI
+					, CHARSET_UTF8, fichierUtf8);
+		// **********************************************************
+		
+		
+		// RAPPORT DE TRANSCODAGE.
+		final List<String> rapportUtilisateur 
+			= this.transcodeur.getRapportUtilisateur();
+		final List<String> rapportDeveloppeur 
+			= this.transcodeur.getRapportDeveloppeur();
+		
+		assertNotNull(
+				"Le rapport utilisateur ne doit pas être null : "
+					, rapportUtilisateur);
+		assertNotNull(
+				"Le rapport développeur ne doit pas être null : "
+					, rapportDeveloppeur);
+		
+		/* AFFICHAGE A LA CONSOLE. */
+		if (AFFICHAGE_GENERAL && affichage) {
+			if (!rapportUtilisateur.isEmpty()) {
+				System.out.println("Rapport Utilisateur");
+				System.out.println(this.transcodeur.afficherListeString(rapportUtilisateur));
+				System.out.println();
+			}
+			if (!rapportDeveloppeur.isEmpty()) {
+				System.out.println("Rapport Développeur");
+				System.out.println(this.transcodeur.afficherListeString(rapportDeveloppeur));
+				System.out.println();
+			}
+			
+			System.out.println("Fichier résultat : " + fileResultat.getAbsolutePath());
+		}
+		
+	} // Fin de testTranscoderHITDIRA2017().__________________________________________
 
 	
 	

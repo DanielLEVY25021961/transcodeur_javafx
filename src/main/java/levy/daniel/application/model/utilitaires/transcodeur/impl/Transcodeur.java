@@ -34,23 +34,28 @@ import levy.daniel.application.model.utilitaires.transcodeur.ITranscodeur;
 /**
  * CLASSE Transcodeur :<br/>
  * MODEL.<br/>
- * Classe chargée du <b>transcodage dun fichier textuel</b>.<br/>
- * <b>Transcode un fichier textuel</b> "fichierOrigine" suppose encodé 
- * en "charsetSupposeEntree" en fichier textuel entièrement 
- * encodé en "charsetSortie".<br/>
- * Le résultat transcodé est disponible dans "fichierSortie".<br/>
- * <b>Vérifie ligne par ligne</b> que "fichierOrigine" est <i>réellement</i> 
- * encodé en "charsetSupposeEntree".<br/>
- * Si ce n'est pas le cas, <b>détecte le charset réel d'encodage 
- * de chaque ligne</b> de "fichierOrigine".<br/>
- * Constitue alors un fichier intermédiaire 
- * "fileEntierementEncodeEntree" entièrement encodé 
- * en "charsetSupposeEntree".<br/>
- * C'est alors ce fichier intermédiaire 
- * "fileEntierementEncodeEntree" entièrement encodé 
- * en "charsetSupposeEntree" qui est intégralement transcodé en 
- * "charsetSortie" dans "fichierSortie".<br/>
- * <br/><br/>
+ * Classe chargée du <b>transcodage d'un fichier textuel</b>.<br/>
+ * <b>Transcode un fichier textuel</b> <code>this.fileATranscoder</code> 
+ * <i>supposé</i> encodé en <code>this.charsetSupposeEntree</code> 
+ * en fichier textuel entièrement 
+ * encodé en <code>this.charsetSortie</code>.<br/>
+ * Le résultat transcodé est disponible dans 
+ * <code>this.fichierSortie</code>.<br/>
+ * <ul>
+ * <li><b>Vérifie ligne par ligne</b> que <code>this.fileATranscoder</code> 
+ * est <i>réellement</i> 
+ * encodé en <code>this.charsetSupposeEntree</code>.</li>
+ * <li>Si ce n'est pas le cas, <b>détecte le charset réel d'encodage 
+ * de chaque ligne</b> de <code>this.fileATranscoder</code>.</li>
+ * <li>Constitue alors un fichier intermédiaire 
+ * <code>this.fileEntierementEncodeEntree</code> entièrement encodé 
+ * en <code>this.charsetSupposeEntree</code>.</li>
+ * <li>C'est alors ce fichier intermédiaire 
+ * <code>this.fileEntierementEncodeEntree</code> entièrement encodé 
+ * en <code>this.charsetSupposeEntree</code> qui est intégralement transcodé en 
+ * <code>this.charsetSortie</code> dans <code>this.fichierSortie</code>.</li>
+ * </ul>
+ * <br/>
  * <img src="../../../../../../../../../../javadoc/images/method_Transcoder.trancoder.mauvais_fichier_1.png" 
  * alt="méthode transcoder(...)" border="1" align="center" /><br/>
  * <img src="../../../../../../../../../../javadoc/images/method_Transcoder.trancoder.mauvais_fichier_2.png" 

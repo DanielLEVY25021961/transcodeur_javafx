@@ -446,7 +446,8 @@ public final class PreferencesManager {
 	 * retourne le répertoire pour les fichiers 
 	 * en entrée par défaut.<br/>
 	 * <ul>
-	 * <li>lit le répertoire stocké dans preferences.properties 
+	 * <li>lit le répertoire stocké dans 
+	 * ressources_externes/preferences/preferences.properties 
 	 * si il n'est pas null.</li>
 	 * <li>"./src/test/resources/fichiers" sinon.</li>
 	 * </ul>
@@ -492,7 +493,8 @@ public final class PreferencesManager {
 				return repFichiersEntreeParDefaut;
 			}
 			
-			/* retourne null si repFichiersEntreeParDefaut n'existe pas sur le HDD. */
+			/* retourne null si repFichiersEntreeParDefaut 
+			 * n'existe pas sur le HDD. */
 			return null;
 			
 		} // Fin du bloc synchronized.__________________
@@ -1169,8 +1171,7 @@ public final class PreferencesManager {
 	 * Getter du Répertoire par défaut des fichiers à transcoder.<br/>
 	 * <br/>
 	 *
-	 * @return repFichiersEntreeParDefaut : File : 
-	 * this.repFichiersEntreeParDefaut.<br/>
+	 * @return this.repFichiersEntreeParDefaut : File.<br/>
 	 * 
 	 * @throws Exception 
 	 */
