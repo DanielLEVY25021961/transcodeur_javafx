@@ -4,8 +4,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 
 
          <!-- ================================================== -->
-         <!-- 			POM pour MAVEN 3.5.0					 -->
-         <!-- 			Java 1.8.0_144							 -->
+         <!-- 			POM pour MAVEN 3.5.4					 -->
+         <!-- 			Java 1.8.0_181							 -->
          <!-- ================================================== -->
 
 
@@ -59,6 +59,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	<!-- ================================================ -->
 	<properties>
 	
+		<!-- version de Java -->
+		<java.version>1.8</java.version>
 		<!-- Force l'encoding des sources du projet en UTF-8 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- Vérifie la conformité des classes Java (.java) avec le JDK 1.8 -->
@@ -75,11 +77,15 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		<!-- 		VERSIONS DES COMPOSANTS DANS LES DEPENDANCES		-->
 		<!-- ========================================================== -->
 		<!-- 				Version de SPRING 							-->
-		<spring.version>5.0.1.RELEASE</spring.version>
+		<spring.version>5.1.0.RELEASE</spring.version>
 		<!-- 				Version d'HIBERNATE 						-->
-		<hibernate.version>5.3.1.Final</hibernate.version>
+		<hibernate.version>5.3.6.Final</hibernate.version>
 		<!-- 			Version hibernate-jpa-2.1-api				    -->
 		<hibernate-jpa-2.1-api.version>1.0.2.Final</hibernate-jpa-2.1-api.version>
+		
+		<!--  			Version javax.persistence-api					-->
+		<javax.persistence-api.version>2.2</javax.persistence-api.version>
+		
 		<!-- 			Version validation-api						    -->
 		<validation-api.version>2.0.0.Final</validation-api.version>
 		<!-- 			Version d'HIBERNATE VALIDATOR				    -->
@@ -103,6 +109,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		<mysql-connector-java.version>8.0.11</mysql-connector-java.version>
 		<!-- 				Version de BD HSQLDB						-->
 		<hsqldb.version>2.4.1</hsqldb.version>
+		<!-- 				Version de H2								 -->
+		<h2.version>1.4.197</h2.version>
 		
 		<!-- 				Version de commons-lang					    -->
 		<commons-lang.version>2.6</commons-lang.version>
@@ -521,6 +529,16 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 <!-- 		    <artifactId>hsqldb</artifactId> -->
 <!-- 		    <version>${hsqldb.version}</version> -->
 <!-- 		    <scope>test</scope>		     -->
+<!-- 		</dependency> -->
+
+		<!-- H2 -->			
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+<!-- 		<dependency> -->
+<!-- 		    <groupId>com.h2database</groupId> -->
+<!-- 		    <artifactId>h2</artifactId> -->
+<!-- 		    <version>${h2.version}</version> -->
+<!-- 		    <scope>compile</scope>		     -->
+<!-- 		    <scope>test</scope> -->
 <!-- 		</dependency> -->
 		
 
